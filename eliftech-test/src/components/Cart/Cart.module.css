@@ -1,0 +1,33 @@
+.flex {
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 91vh;
+}
+.flexR {
+    flex: 1 1 65%;
+    margin: 0 auto;
+    padding: 50px;
+}
+.flexL{
+    flex: 1 1 35%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+@media(max-width: 800px){
+    .flex{
+        flex-direction: column;
+        margin-bottom: 700px;
+    }
+    .flexR {
+        flex: 1 1 65%;
+        margin: 0 auto;
+    }
+    .flexL{
+        flex: 1 1 35%;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 400px){
+
+}
