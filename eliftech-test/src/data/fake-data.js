@@ -62,7 +62,7 @@ const shops = [
         ]
     },
     {
-        name: 'FruitJ',
+        name: 'ATB',
         id: 3,
         products: [
             {

@@ -25,7 +25,7 @@ const ProductItem = ({ product, setCart, cart, setCartArray, setIsDisabled }) =>
       <div className={style.priceAndBtn}>
         <span>{product.price} $</span>
         {cart.includes(product) ?
-          <button
+          <button style={{ cursor: 'pointer' }}
             onClick={removeCartAndArray}>Remove </button> :
           (<button style={{ cursor: 'pointer' }}
             onClick={setCartAndArray}>Add to cart</button>)

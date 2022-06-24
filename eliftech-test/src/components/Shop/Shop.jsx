@@ -8,7 +8,8 @@ import shops from '../../data/fake-data'
 const Shop = ({ setCart, cart, setCartArray }) => {
 
     const [products, setProducts] = useState(shops[2].products)
-    const [isDisabled, setIsDisabled] = useState(false)
+    const [isDisabled, setIsDisabled] = useState(cart.length == 0 ? false : true)
+
     return (
         <div className={style.shopContainer}>
             <ShopSelector setProducts={setProducts} isDisabled={isDisabled} />

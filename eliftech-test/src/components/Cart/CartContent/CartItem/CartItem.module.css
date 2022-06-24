@@ -33,7 +33,14 @@
 .buttonsCon{
     display: flex;
     justify-content: space-around;
-
+}
+.buttonsCon button{
+    border: none;
+    background-color: lavenderblush;
+    transition: all 0.3s ease 0s;
+}
+.buttonsCon button:hover{
+    background-color: skyblue;
 }
 @media(max-width: 460px){
     .cartItem{

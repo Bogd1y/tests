@@ -24,10 +24,15 @@
 .priceAndBtn button{
     border-radius: 10px;
     border: lightcyan;
-    background-color: #60a3bc;
+    background-color: #78cceb;
     color: aliceblue;
     padding: -10px 0;
     height: 40px;
+    transition: all 0.3s ease 0s;
+}
+.priceAndBtn button:hover{
+    background-color: #44abd0;
+    box-shadow: 1px 1px 10px rgb(22, 72, 89);
 }
 @media(max-width: 700px){
     .prodItem {
