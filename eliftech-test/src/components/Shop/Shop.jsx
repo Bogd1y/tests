@@ -6,7 +6,7 @@ import { useState } from 'react'
 import shops from '../../data/fake-data'
 
 const Shop = ({ setCart, cart, setCartArray }) => {
-
+    console.log(cart);
     const [products, setProducts] = useState(shops[2].products)
     const [isDisabled, setIsDisabled] = useState(cart.length == 0 ? false : true)
 

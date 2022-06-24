@@ -10,7 +10,7 @@
   max-height: 550px;
   display: flex;
   margin-top: 25px;
-  flex-direction: column;
+  flex-direction: column-reverse;
   max-width: 1500px;
   padding: 15px;
   border-radius: 15px;

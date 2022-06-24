@@ -1,12 +1,13 @@
 import React from 'react'
 import style from './ProductItem.module.css'
 
-let checker = []
 const ProductItem = ({ product, setCart, cart, setCartArray, setIsDisabled }) => {
+  let checker = cart.filter(i => i.id !== product.id)
   // debugger
 
   const removeCartAndArray = () => {
-    if (checker.length == 1) { setIsDisabled(false) }
+    console.log(checker);
+    if (checker.length == 0) { setIsDisabled(false) }
     checker.pop()
     setCart(cart.filter(i => i.id !== product.id))
     setCartArray(cart.filter(i => i.id !== product.id))
